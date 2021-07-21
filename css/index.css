@@ -1,0 +1,466 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* navbar */
+.navbar{
+    background-color: #11999e;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    height: 117px;
+    transition: all 0.5s ease-out;
+}
+
+.logo{
+    position: absolute;
+    filter:invert(1);
+    transform: scale(2);
+    margin: 20px;
+    cursor: pointer;
+    color:black;
+}
+
+.h-nav{
+    height: 57px;
+}
+
+.v-nav{
+    visibility: hidden;
+    opacity: 0;
+}
+#Hamburger{
+    padding: 15px 25px;
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 4px;
+}
+
+.line{
+    color:black;
+    margin-bottom: 5px;
+    font-size: 20px;
+} 
+
+.search{
+    display: flex;
+    justify-content: center;
+    padding-top: 67px;
+    transition: all 170ms linear;
+}
+
+input{
+    width: 260px;
+    padding-left: 26px;
+    outline: none;
+    height: 28px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.searchbox{
+    position: relative;
+    left: 30px;
+    padding: 4px 10px;
+    cursor: pointer;
+}
+
+
+/* Current weather */
+#current{
+    background:  #11999e;
+    height: 365px;
+    overflow: hidden;
+}
+
+.h-class{
+    text-align: center;
+    margin: 10px auto;
+    background-color: rgba(255, 245, 220,0.5);
+    width: 350px;
+    height: 45px;
+    font-size: 29px;
+    padding: 6px;
+    border-radius: 10px;
+}
+
+#currentWeather{
+    width: 350px;
+    margin: 0px auto;
+    background-color: rgba(255, 245, 220,0.5);
+    margin-top: 24px;
+    border-radius: 35px;
+}
+
+.location{
+    padding: 10px;
+}
+
+.city{
+    text-align: center;
+}
+
+.date{
+    text-align: center;
+}
+
+.time{
+    text-align: center;
+}
+
+.temparature{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    text-shadow: 2px 3px rgba(0,0,0,0.3);
+}
+
+.wind{
+    text-align: center;
+}
+
+.feel{
+    text-align: center;
+}
+
+.humidity{
+    text-align: center;
+}
+
+.pressure{
+    text-align: center;
+}
+
+.weather{
+    text-align: center;
+}
+
+.weathericon{
+    display: block;
+    margin: 0px auto;
+    height: 59px;
+}
+
+#weatherforcast{
+    background: #a2d0c1;
+    height: 331px;
+    overflow: hidden;
+    padding-bottom: 7px;
+}
+
+.h-second {
+    text-align: center;
+    margin: 10px auto;
+    background-color: rgb(59, 59, 59);
+    width: 350px;
+    height: 50px;
+    font-size: 28px;
+    padding: 8px;
+    border-radius: 10px;
+    color: white;
+}
+
+#forecast{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 6px;
+}
+
+.day{
+    background-color:rgb(59, 59, 59);
+    color: white;
+    margin: 0px 0px;
+    border-radius: 40px;
+    padding: 0px 30px;
+    margin-bottom: 10px;
+    margin-top: 6px;
+}
+
+
+h3 {
+    text-align: center;
+    margin-bottom: 16px;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+.rise-set{
+    text-align: center;
+}
+
+.day-night{
+    text-align: center;
+}
+
+.max-min{
+    text-align: center;
+}
+
+.humidity1{
+    text-align: center;
+}
+
+.wind1{
+    text-align: center;
+}
+
+.weather1{
+    text-align: center;
+}
+
+.weathericon1{
+    display: block;
+    margin: 0px auto;
+    height: 59px;
+}
+
+/* responsive design */
+@media only screen and (max-width: 395px){
+    #currentWeather {
+        width: 327px;
+        margin: 0px auto;
+        background-color: rgba(255, 245, 220,0.5);
+        margin-top: 24px;
+        border-radius: 35px;
+    }
+
+    .h-class {
+        text-align: center;
+        margin: 10px auto;
+        background-color: rgba(255, 245, 220,0.5);
+        width: 332px;
+        height: 45px;
+        font-size: 29px;
+        padding: 6px;
+        border-radius: 10px;
+    }
+
+    .h-second {
+        text-align: center;
+        margin: 10px auto;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 330px;
+        height: 45px;
+        font-size: 27px;
+        padding: 6px;
+        border-radius: 10px;
+        color: white;
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .h-class {
+        text-align: center;
+        margin: 10px auto;
+        background-color: rgba(255, 245, 220,0.5);
+        width: 300px;
+        height: 45px;
+        font-size: 27px;
+        padding: 6px;
+        border-radius: 10px;
+    }
+
+    #currentWeather {
+        width: 292px;
+        margin: 0px auto;
+        background-color: rgba(255, 245, 220,0.5);
+        margin-top: 24px;
+        border-radius: 35px;
+    }
+
+    .h-second {
+        text-align: center;
+        margin: 10px auto;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 302px;
+        height: 45px;
+        font-size: 26px;
+        padding: 6px;
+        border-radius: 10px;
+        color: white;
+    }
+
+    .day {
+        background-color: rgba(0, 0, 0, 0.9);
+        color: white;
+        margin: 0px 0px;
+        border-radius: 40px;
+        padding: 0px 20px;
+        margin-bottom: 10px;
+        margin-top: 6px;
+    }
+}
+
+@media only screen and (max-width: 312px){
+    .h-class {
+        text-align: center;
+        margin: 10px auto;
+        background-color: rgba(255, 245, 220,0.5);
+        width: 265px;
+        height: 45px;
+        font-size: 25px;
+        padding: 7px;
+        border-radius: 10px;
+    }
+
+    #currentWeather {
+        width: 255px;
+        margin: 0px auto;
+        background-color: rgba(255, 245, 220,0.5);
+        margin-top: 24px;
+        border-radius: 35px;
+    }
+
+    .h-second {
+        text-align: center;
+        margin: 2px auto;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 262px;
+        height: 45px;
+        font-size: 22px;
+        padding: 6px;
+        border-radius: 10px;
+        color: white;
+    }
+
+    .day {
+        background-color: rgba(0, 0, 0, 0.9);
+        color: white;
+        margin: 0px 0px;
+        border-radius: 40px;
+        padding: 0px 10px;
+        margin-bottom: 10px;
+        margin-top: 8px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (min-height: 1320px){
+    #current {
+        
+        height: 463px;
+        overflow: hidden;
+    }
+
+    .h-class {
+        text-align: center;
+        margin: 10px auto;
+        background-color: rgba(255, 245, 220,0.5);
+        width: 350px;
+        height: 50px;
+        font-size: 32px;
+        padding: 6px;
+        border-radius: 10px;
+        margin-top: 24px;
+    }
+
+    #currentWeather {
+        width: 350px;
+        margin: 0px auto;
+        background-color: rgba(255, 245, 220,0.5);
+        margin-top: 24px;
+        border-radius: 35px;
+        font-size: 22px;
+    }
+
+    .temparature {
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+        text-shadow: 2px 3px rgb(0 0 0 / 30%);
+    }
+
+    .h-second {
+        text-align: center;
+        margin: 12px auto;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 358px;
+        height: 65px;
+        font-size: 32px;
+        padding: 15px;
+        border-radius: 10px;
+        color: white;
+    }
+
+    .day {
+        background-color: rgba(0, 0, 0, 0.9);
+        color: white;
+        margin: 0px 0px;
+        border-radius: 40px;
+        padding: 0px 30px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        font-size: 22px;
+        line-height: 30px;
+    }
+}
+
+@media only screen and (min-width: 1900px){
+    .h-class {
+        text-align: center;
+        margin: 48px auto;
+        background-color: rgba(255, 245, 220,0.5);
+        width: 372px;
+        height: 60px;
+        font-size: 35px;
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 35px;
+    }
+
+    #currentWeather {
+        width: 380px;
+        margin: 0px auto;
+        background-color: rgba(255, 245, 220,0.5);
+        margin-top: 24px;
+        border-radius: 35px;
+        font-size: 22.5px;
+    }
+
+    .temparature {
+        text-align: center;
+        font-size: 45px;
+        font-weight: bold;
+        text-shadow: 2px 3px rgb(0 0 0 / 30%);
+    }
+
+    #current {
+        
+        height: 530px;
+        overflow: hidden;
+    }
+
+    .h-second {
+        text-align: center;
+        margin: 10px auto;
+        background-color:black;
+        width: 370px;
+        height: 75px;
+        font-size: 32.5px;
+        padding: 20px;
+        border-radius: 10px;
+        color: white;
+    }
+
+    .day {
+        background-color:black;
+        color: white;
+        margin: 0px 0px;
+        border-radius: 40px;
+        padding: 0px 30px;
+        margin-bottom: 10px;
+        margin-top: 6px;
+        font-size: 22px;
+        line-height: 32px;
+    }
+}

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Forecast App</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="icon" href="icon.png">
+</head>
+
+<body>
+    <!-- Hamburger -->
+    <nav class="navbar h-nav">
+        <i class="fa fa-sun-o logo" id="sunlogo" aria-hidden="true"></i>
+
+       
+        <div id="Hamburger">
+            <div class="line">Click here to enter city name</div>
+            
+        </div>
+        <div class="search v-nav">
+            <i class="fa fa-search searchbox" id="searchbox" aria-hidden="true"></i>
+          
+            <input type="search" name="placename" id="placename" autocomplete="off" placeholder="Enter the city....">
+        </div>
+    </nav>
+
+    <!-- currentWeather -->
+    <section id="current">
+        <h2 class="h-class">CURRENT WEATHER</h2>
+        <div id="currentWeather">
+            <div class="location">
+                <div class="city" id="city"></div>
+                <div class="date" id="date"></div>
+                <div class="time" id="time"></div>
+            </div>
+            <div class="weather-details">
+                <div class="temparature" id="temparature"></div>
+                <div class="feel" id="feel"></div>
+                <div class="humidity" id="humidity"></div>
+                <div class="pressure" id="pressure"></div>
+                <div class="wind" id="wind"></div>
+                <div class="weather" id="weathertype"></div>
+                <div id="imgdiv"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- forecast for 7 days -->
+    <section id="weatherforcast">
+        <h2 class="h-second">WEATHER FORECAST</h2>
+        <div id="forecast">
+            <div class="day" id="day-1">
+                <h3>TODAY</h3>
+                <div class="date" id="date1"></div>
+                <div class="rise-set" id="riseset1">
+
+                </div>
+                <div class="day-night" id="daynight1">
+
+                </div>
+                <div class="max-min" id="maxmin1">
+
+                </div>
+                <div class="humidity1" id="humidity1">
+
+                </div>
+                <div class="wind1" id="wind1">
+
+                </div>
+                <div class="weather1" id="weather1"></div>
+                <div id="imgdiv1"></div>
+            </div>
+            <div class="day" id="day-2">
+                <h3>TOMORROW</h3>
+                <div class="date" id="date2"></div>
+                <div class="rise-set" id="riseset2">
+
+                </div>
+                <div class="day-night" id="daynight2">
+
+                </div>
+                <div class="max-min" id="maxmin2">
+
+                </div>
+                <div class="humidity1" id="humidity2">
+
+                </div>
+                <div class="wind1" id="wind2">
+
+                </div>
+                <div class="weather1" id="weather2"></div>
+                <div id="imgdiv2"></div>
+            </div>
+            <div class="day" id="day-3">
+                <h3>DAY-3</h3>
+                <div class="date" id="date3"></div>
+                <div class="rise-set" id="riseset3">
+
+                </div>
+                <div class="day-night" id="daynight3">
+
+                </div>
+                <div class="max-min" id="maxmin3">
+
+                </div>
+                <div class="humidity1" id="humidity3">
+
+                </div>
+                <div class="wind1" id="wind3">
+
+                </div>
+                <div class="weather1" id="weather3"></div>
+                <div id="imgdiv3"></div>
+            </div>
+            <div class="day" id="day-4">
+                <h3>DAY-4</h3>
+                <div class="date" id="date4"></div>
+                <div class="rise-set" id="riseset4">
+
+                </div>
+                <div class="day-night" id="daynight4">
+
+                </div>
+                <div class="max-min" id="maxmin4">
+
+                </div>
+                <div class="humidity1" id="humidity4">
+
+                </div>
+                <div class="wind1" id="wind4">
+
+                </div>
+                <div class="weather1" id="weather4"></div>
+                <div id="imgdiv4"></div>
+            </div>
+            <div class="day" id="day-5">
+                <h3>DAY-5</h3>
+                <div class="date" id="date5"></div>
+                <div class="rise-set" id="riseset5">
+
+                </div>
+                <div class="day-night" id="daynight5">
+
+                </div>
+                <div class="max-min" id="maxmin5">
+
+                </div>
+                <div class="humidity1" id="humidity5">
+
+                </div>
+                <div class="wind1" id="wind5">
+
+                </div>
+                <div class="weather1" id="weather5"></div>
+                <div id="imgdiv5"></div>
+            </div>
+            <div class="day" id="day-6">
+                <h3>DAY-6</h3>
+                <div class="date" id="date6"></div>
+                <div class="rise-set" id="riseset6">
+
+                </div>
+                <div class="day-night" id="daynight6">
+
+                </div>
+                <div class="max-min" id="maxmin6">
+
+                </div>
+                <div class="humidity1" id="humidity6">
+
+                </div>
+                <div class="wind1" id="wind6">
+
+                </div>
+                <div class="weather1" id="weather6"></div>
+                <div id="imgdiv6"></div>
+            </div>
+            <div class="day" id="day-7">
+                <h3>DAY-7</h3>
+                <div class="date" id="date7"></div>
+                <div class="rise-set" id="riseset7">
+
+                </div>
+                <div class="day-night" id="daynight7">
+
+                </div>
+                <div class="max-min" id="maxmin7">
+
+                </div>
+                <div class="humidity1" id="humidity7">
+
+                </div>
+                <div class="wind1" id="wind7">
+
+                </div>
+                <div class="weather1" id="weather7"></div>
+                <div id="imgdiv7"></div>
+            </div>
+            <div class="day" id="day-8">
+                <h3>DAY-8</h3>
+                <div class="date" id="date8"></div>
+                <div class="rise-set" id="riseset8">
+
+                </div>
+                <div class="day-night" id="daynight8">
+
+                </div>
+                <div class="max-min" id="maxmin8">
+
+                </div>
+                <div class="humidity1" id="humidity8">
+
+                </div>
+                <div class="wind1" id="wind8">
+
+                </div>
+                <div class="weather1" id="weather8"></div>
+                <div id="imgdiv8"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
